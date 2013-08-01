@@ -9,7 +9,7 @@ $.fn.passcoder = function(options) {
 	var className = this.attr('class');
 	var rendered_html = '';
 	for (var i=0;i<settings.characters;i++){
-		rendered_html += '<input type="' + type + '" class="' + className + ' passcoder" autocomplete="off" type="text" maxlength="1" name="' + name + '-' + i + '" />';
+		rendered_html += '<input style="display:inline-block" type="' + type + '" class="' + className + ' passcoder" autocomplete="off" type="text" maxlength="1" name="' + name + '-' + i + '" />';
 	}
 	var html = $.parseHTML(rendered_html);
 	$(html).each(function(){
