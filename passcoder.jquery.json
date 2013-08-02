@@ -1,8 +1,12 @@
 {
     "name": "passcoder",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "title": "Passcoder",
-    "author": "Jacob Valenta",
+    "author": {
+    "name" : "Jacob Valenta",
+        "email" : "jacob.valenta@gmail.com",
+        "url" : "http://www.github.com/jacobvalenta/"
+    },
     "licenses": [
         {
             "type": "GPLv2",
