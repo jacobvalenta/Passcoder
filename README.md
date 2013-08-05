@@ -1,6 +1,8 @@
 Passcoder
 =========
 
+Passcoder is jQuery plugin to create a passcode UI for an input field. By default, it takes a single input, and turns it into 4 fields, each containing one character. when a character is input, the focus moves to the next field. Passcoder is easy to use.
+
 Getting started with Passcoder
 ---------
 
@@ -26,3 +28,9 @@ To call passcoder to use more or less inputs, or put more distance between the i
         characters: 5,  
         margin: 10  
     });
+
+Form Submition
+-----------
+
+Because passcoder creates several inputs, it needs to join the values of each input upon form submition. To do this, Passcoder will remove the `name` attribute from each of the passcoder inputs (to not post the data), and creates a new hidden input field, with the same `name` attribute. The idea is so you only need to call `element.passcoder()` and everything else will be taken care of. 
+You can still create bindings for submition on the form, passcoder will still render the values.
